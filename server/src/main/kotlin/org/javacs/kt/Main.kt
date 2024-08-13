@@ -5,6 +5,7 @@ import com.beust.jcommander.Parameter
 import java.util.concurrent.Executors
 import org.eclipse.lsp4j.launch.LSPLauncher
 import org.javacs.kt.util.ExitingInputStream
+import org.javacs.kt.util.NewLineOutputStream
 import org.javacs.kt.util.tcpStartServer
 import org.javacs.kt.util.tcpConnectToClient
 
@@ -18,8 +19,10 @@ class Args {
 
     @Parameter(names = ["--tcpServerPort", "-sp"])
     var tcpServerPort: Int? = null
+
     @Parameter(names = ["--tcpClientPort", "-p"])
     var tcpClientPort: Int? = null
+
     @Parameter(names = ["--tcpClientHost", "-h"])
     var tcpClientHost: String = "localhost"
 }
@@ -37,7 +40,7 @@ fun main(argv: Array<String>) {
         // Launch as TCP Server
         LOG.connectStdioBackend()
         tcpStartServer(it)
-    } ?: Pair(System.`in`, System.out)
+    } ?: Pair(System.`in`, NewLineOutputStream(System.out))
 
     val server = KotlinLanguageServer()
     val threads = Executors.newSingleThreadExecutor { Thread(it, "client") }
