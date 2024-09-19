@@ -1,0 +1,18 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>eu.karcags.ceg.graphmodel</groupId>
+    <artifactId>graph-model</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <name>KarcagS Graph Model</name>
+    <description>Graph structure model.</description>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+</project>

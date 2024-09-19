@@ -25,6 +25,7 @@ dependencies {
         api("org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion")
         api("org.jetbrains.kotlin:kotlin-jvm:$kotlinVersion")
         api("org.jetbrains:fernflower:1.0")
+        api("eu.karcags.ceg.graphmodel:graph-model:1.0.0")
         api("org.jetbrains.exposed:exposed-core:$exposedVersion")
         api("org.jetbrains.exposed:exposed-dao:$exposedVersion")
         api("org.jetbrains.exposed:exposed-jdbc:$exposedVersion")
