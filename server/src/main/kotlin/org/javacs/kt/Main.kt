@@ -42,7 +42,17 @@ fun main(argv: Array<String>) {
         tcpStartServer(it)
     } ?: Pair(System.`in`, NewLineOutputStream(System.out))
 
-    val server = KotlinLanguageServer()
+    val server = KotlinLanguageServer(
+        Configuration(
+            codegen = CodegenConfiguration(true),
+            completion = CompletionConfiguration(SnippetsConfiguration(true)),
+            scripts = ScriptsConfiguration(true, false),
+            indexing = IndexingConfiguration(true),
+            externalSources = ExternalSourcesConfiguration(true, true),
+            inlayHints = InlayHintsConfiguration(true, true, true),
+            formatting = FormattingConfiguration(ktfmt = KtfmtConfiguration(indent = 2)),
+        )
+    )
     val threads = Executors.newSingleThreadExecutor { Thread(it, "client") }
     val launcher = LSPLauncher.createServerLauncher(server, ExitingInputStream(inStream), outStream, threads) { it }
 
