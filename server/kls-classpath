@@ -1,2 +1,2 @@
 #!/bin/bash
-echo /lib/graph-model-1.0.0.jar
+echo /lib/graph-model-1.2.0.jar
