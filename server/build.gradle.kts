@@ -48,7 +48,7 @@ dependencies {
     implementation(kotlin("sam-with-receiver-compiler-plugin"))
     implementation(kotlin("reflect"))
     implementation("org.jetbrains:fernflower")
-    implementation(files("lib/graph-model-1.2.0.jar"))
+    implementation(files("lib/graph-model-2.0.0.jar"))
     implementation("org.jetbrains.exposed:exposed-core")
     implementation("org.jetbrains.exposed:exposed-dao")
     implementation("org.jetbrains.exposed:exposed-jdbc")
