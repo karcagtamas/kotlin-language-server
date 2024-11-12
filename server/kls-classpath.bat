@@ -1,2 +1,2 @@
 @ECHO OFF
-ECHO /lib/graph-model-2.1.0.jar
+ECHO /lib/graph-model-2.2.0.jar
