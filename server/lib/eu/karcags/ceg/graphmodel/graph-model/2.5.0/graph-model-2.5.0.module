@@ -1,0 +1,96 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "eu.karcags.ceg.graphmodel",
+    "module": "graph-model",
+    "version": "2.5.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "graph-model-2.5.0.jar",
+          "url": "graph-model-2.5.0.jar",
+          "size": 90669,
+          "sha512": "94b7526351ed73ff23ad07415cb2089b31eb41a2bfba88a229484bacf04feaae5b3e377de3f532b22a4b2eb0ddcdcc41c48634c126f745a94e2a348cd4d5a94b",
+          "sha256": "cab09e7eaeb19885fe0b3a28b8adcfc031e042d85f43c90269b74a1685b58720",
+          "sha1": "f6c8502e6a8b661306fd109d66fc1efaebec2975",
+          "md5": "78b86c6711eb7117e98ca33c3c8f9b7e"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.ktor",
+          "module": "ktor-http-jvm",
+          "version": {
+            "requires": "2.3.12"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json-jvm",
+          "version": {
+            "requires": "1.5.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "graph-model-2.5.0.jar",
+          "url": "graph-model-2.5.0.jar",
+          "size": 90669,
+          "sha512": "94b7526351ed73ff23ad07415cb2089b31eb41a2bfba88a229484bacf04feaae5b3e377de3f532b22a4b2eb0ddcdcc41c48634c126f745a94e2a348cd4d5a94b",
+          "sha256": "cab09e7eaeb19885fe0b3a28b8adcfc031e042d85f43c90269b74a1685b58720",
+          "sha1": "f6c8502e6a8b661306fd109d66fc1efaebec2975",
+          "md5": "78b86c6711eb7117e98ca33c3c8f9b7e"
+        }
+      ]
+    }
+  ]
+}
